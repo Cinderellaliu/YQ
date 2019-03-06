@@ -1,0 +1,12 @@
+@media (max-width: 374px){
+    .main-center-middle .cen-left.pull-left{width:calc(100% - 5rem)}
+    .main-center-middle .cen-left span{font-size: 1.4rem}
+    .hot-tabs>li{margin-right:6%}
+    .paper-item-txt02{margin-top:.5rem;}
+    .money-up{top:13rem}
+    .money-up .vip:nth-child(2n){margin-left:0;margin-top:1.5rem;}
+    .pay-up{margin-top:14rem}
+    .bottom-up{margin-top:4rem}
+    .attention-tab .nav-tabs>li{font-size: 1.2rem;}
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main-content">
+    <div class="cash-top">
+        <h2>可提现金额</h2>
+        <span><em>0.00</em> 元</span>
+        <div class="pick-up-box clearfix active1">
+            <div class="pick-up-box1 pull-left">
+                提款到微信零钱
+            </div>
+            <div class="pick-up-box1 pull-right">
+                提款到银行卡
+            </div>
+        </div>
+        <div class="clearfix bank-box">
+            <span class="pull-left">建设银行（0982）</span>
+            <a class="pull-right" href="#">切换</a>
+        </div>
+    </div>
+    <div class="cash-middle">
+        <form role="form" class="money-form">
+            <div class="form-group money-form-box">
+                <label for="money">提款金额（元）</label>
+                <div class="money-input-box clearfix">
+                    <div class="pull-left symbol">&yen;</div>
+                    <input id="money" class="form-control pull-left" type="number" value="2000">
+                </div>     
+            </div>
+            <div class="form-group money-form-box">
+                <button class=" btn-default form-control">确认提款</button>
+            </div>
+            <span>预计半小时内到账</span>
+        </form>
+    </div>    
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $(".pick-up-box1").first().addClass("choose");
+        $(".bank-box").hide();
+        $(".pick-up-box1").first().click(function(){
+            $(this).next().removeClass("choose");
+            $(this).addClass("choose");
+            $(".bank-box").hide();
+        });
+        $(".pick-up-box1").last().click(function(){
+            $(this).prev().removeClass("choose");
+            $(this).addClass("choose");
+            $(".bank-box").show();
+        })
+    })
+</script>
+</body>
+</html>

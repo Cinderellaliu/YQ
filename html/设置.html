@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>设置</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main-content">
+	<div class="set-top">
+        <div class="set-more">
+            <span class="left-set">文章查看更多</span>
+            <span class="switch-bar pull-right"><i></i></span>
+        </div>
+        <div class="set-more">
+            <span class="left-set">文章顶部跳转微站</span>
+            <span class="switch-bar pull-right"><i></i></span>
+        </div>
+        <div class="set-more">
+            <span class="left-set">接受通知</span>
+            <span class="switch-bar pull-right"><i></i></span>
+        </div>
+    </div>
+    <div class="set-save">
+        <button>保存</button>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(".switch-bar").click(function(){
+        $(this).find(" i").toggleClass("open");
+        $(this).toggleClass('green-bg')
+    });
+</script>
+</body>
+</html>

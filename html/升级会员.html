@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>升级会员</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main-content">
+	<div class="upgrade-members clearfix">
+		<div class="left-up">
+			<img src="../images/pic_portrai.png" alt="">
+		</div>
+		<div class="right-up">
+			<h4>卖烧饼的大鹏</h4>
+			<p>续费会员享所有高级功能</p>
+		</div>
+	</div>
+	<div class="money-up clearfix">
+		<div class="vip clearfix">
+			<span class="much-vip">298元</span>
+			<span class="gery-vip">vip
+				<i class="sure-up"></i>
+				<img src="../images/sure_pic.png" alt="">
+			</span>
+		</div>
+		<div class="vip clearfix">
+			<span class="much-vip">5000元</span>
+			<span class="gery-vip">合伙人
+				<i class="sure-up"></i>
+				<img src="../images/sure_pic.png" alt="">
+			</span>
+		</div>
+		<div class="vip clearfix">
+			<span class="much-vip">50000元</span>
+			<span class="gery-vip">区域代理
+				<i class="sure-up"></i>
+				<img src="../images/sure_pic.png" alt="">
+			</span>
+		</div>
+		<div class="vip clearfix">
+			<span class="much-vip">200000元</span>
+			<span class="gery-vip">市级代理
+				<i class="sure-up"></i>
+				<img src="../images/sure_pic.png" alt="">
+			</span>
+		</div>
+	</div>
+	<div class="pay-up clearfix">
+		<div class="wx-pay clearfix">
+			<img src="../images/wx_up.png" alt="" class="wx">
+			<span>微信支付</span>
+			<i class="up-do up-do1"><img src="../images/right_up.png" alt="" class="up-pic"></i>
+		</div>
+		<div class="card-pay clearfix">
+			<img src="../images/card_up.png" alt="" class="card">
+			<span>银行卡支付</span>
+			<i class="up-do up-do2"><img src="../images/right_up.png" alt="" class="up-pic"></i>
+		</div>
+	</div>
+</div>
+<div class="bottom-up clearfix">
+    <button class="open-up">立即开通</button>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+  $(function(){
+    	$(".vip").first().addClass("active");
+    	$(".vip").on('click',function(){
+    		$(this).addClass("active");
+    		$(this).siblings().removeClass("active");	
+    	});   
+    $('.up-do1').addClass("active");
+    $('.wx-pay').on('click',function(){
+    	$('.up-do1').addClass("active");
+    	$('.up-do2').removeClass("active");
+    });
+    $('.card-pay').on('click',function(){
+    	$('.up-do2').addClass("active");
+    	$('.up-do1').removeClass("active");
+    });
+  })
+</script>
+</body>
+</html>
